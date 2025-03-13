@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "CSS Reloader",
+  "version": "1.0",
+  "description": "Reload all CSS on the current tab with Fn+F9",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "reload-css": {
+      "suggested_key": "Ctrl+K",
+      "description": "Reload all CSS on the current page"
+    }
+  }
+} 
