@@ -12,3 +12,6 @@ When uploading to chrome, manifest.json returns some error but not syntax error
 
 # Actions:
 1. Changed to cmd + K instead of fn + F9
+
+# Model
+claude-3.7-sonnet on Cursor
